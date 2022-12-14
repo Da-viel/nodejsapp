@@ -14,7 +14,7 @@ job('Aplicacion Node.js Docker DSL') {
     }
     steps {
 	    step{
-		    bash "npm install -g npm@9.2.0"
+		    shell "npm install -g npm@9.2.0"
 	    }
         dockerBuildAndPublish {
             repositoryName('davilku/nodejsapp')
